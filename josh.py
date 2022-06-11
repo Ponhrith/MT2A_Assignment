@@ -13,10 +13,8 @@ table = []
 print("THE PROJECTION OF INTEREST MADE BY AN INVESTMENT OF " + str(amount) +
     " EVERY YEAR AT AN INTEREST RATE OF " + str(i_r) + "% FOR A PERIOD OF " + str(duration) + " YEARS")
 for i in range(duration):
-        #if i > 0:
     table.append([i + 1,  round(monthly[i])] )
-        #else:
-        #    table.append([i + 1,   round(monthly[i] - amount, 2),round(monthly[i] - amount * (i + 1), 2), round(monthly[i], 2)])
+    
 for v in table:
     a, b= v
     print("{:<8} {:<10}".format(a, b))
