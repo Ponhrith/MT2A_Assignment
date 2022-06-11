@@ -1,3 +1,5 @@
+#will define as josh function when putting the 2 programs togeter in patrickparadoxV2.py
+
 amount = int(input("Enter the amount of one time deposit:"))
 i_r = int(input("Enter the amount of annual interest rate:"))
 duration = int(input("Enter the duration of the deposits in years:"))
