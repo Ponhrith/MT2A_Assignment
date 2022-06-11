@@ -3,7 +3,7 @@ def earn():
     print("PRESS 1 TO SEE THE GOOD RETURN:")
     print("PRESS 2 TO SEE THE BAD RETURN:")
 
-def peyton():
+def peytoncal():
     loop = True
     while loop:
         earn()
@@ -56,4 +56,4 @@ def bad():
         a, b = v
         print("{:<8} {:10}".format(a, b)) 
         
-peyton() 
+peytoncal() 
