@@ -25,7 +25,7 @@ def good():
             monthly(monthly[i-1]*(1 + i_r /100))
         else:
             monthly.append(amount * (1 + i_r /100) ** (i + 1))
-        
+        print("The Total Value to Date is:", round(monthly[i], 2))
     table = []
     print("SUPPOSED THE FIRST 21 YEARS IS THE GOOD RETURN OF " + str(amount) +
           "EVER YEAR AT AN INTERST RATE OF" + str(i_r) + "%")
@@ -45,6 +45,7 @@ def bad():
             monthly(monthly[i-1]*(1 + i_r /100))
         else:
             monthly.append(amount * (1 + i_r /100) ** (i + 1))
+        print("The Total Value to Date is:", round(monthly[i], 2))
         
     table = []
     print("SUPPOSED THE FIRST 9 YEARS IS THE BAD RETURN OF " + str(amount) +
