@@ -7,7 +7,7 @@ monthly = []
     # print('total =  ', amount * ( (1 + i_r / 100) ** duration ))
 for i in range(duration):
     if i > 0:
-        monthly.append(monthly[i - 1] *(1 + i_r / 100) )  # i=1,2,3,4...n
+        monthly.append(monthly[i - 1] *(1 + i_r / 100))  # i=1,2,3,4...n
     else:
         monthly.append(amount * (1 + i_r / 100) ** (i + 1))  # i =0
     print("The Total Value to Date is:", round(monthly[i], 2))
