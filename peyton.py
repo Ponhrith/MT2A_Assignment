@@ -22,7 +22,7 @@ def good(): #define good function for the good return for the 21 years
     monthly = []
     for i in range(duration):
         if i > 0:
-            monthly(monthly[i-1]*(1 + i_r /100))
+            monthly(monthly[i - 1]*(1 + float(i_r) /100))
         else:
             monthly.append(amount * (1 + i_r /100) ** (i + 1))
         print("The Total Value to Date is:", round(monthly[i], 2))
@@ -38,11 +38,11 @@ def good(): #define good function for the good return for the 21 years
 def bad(): #define bad return as the loss return for the 9 years
     amount = int(250000)
     i_r = float(7.5)
-    duration = int(21)
+    duration = int(9)
     monthly = []
     for i in range(duration):
         if i > 0:
-            monthly(monthly[i-1]*(1 - i_r /100))
+            monthly.append(monthly[i-1]*(1 - i_r /100))
         else:
             monthly.append(amount * (1 - i_r /100) ** (i + 1))
         print("The Total Value to Date is:", round(monthly[i], 2))

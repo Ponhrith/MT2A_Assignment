@@ -123,5 +123,5 @@ def bad(): #define bad return as the loss return for the 9 years
         a, b = v
         print("{:<8} {:10}".format(a, b)) 
         
-peytoncal() 
+ 
 initial()
