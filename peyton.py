@@ -28,7 +28,7 @@ def good(): #define good function for the good return for the 21 years
         print("The Total Value to Date is:", round(monthly[i], 2))
     table = []
     print("SUPPOSED THE FIRST 21 YEARS IS THE GOOD RETURN OF " + str(amount) +
-          "EVER YEAR AT AN INTERST RATE OF" + str(i_r) + "%")
+          "EVERY YEAR AT AN INTERST RATE OF" + str(i_r) + "%")
     for i in range(duration):
         table.append([i + 1, round(monthly[i])])
     for v in table:
@@ -49,7 +49,7 @@ def bad(): #define bad return as the loss return for the 9 years
         
     table = []
     print("SUPPOSED THE FIRST 9 YEARS IS THE BAD RETURN OF " + str(amount) +
-          "EVER YEAR AT AN INTERST RATE OF" + str(i_r) + "%")
+          "EVERY YEAR AT AN INTERST RATE OF" + str(i_r) + "%")
     for i in range(duration):
         table.append([i + 1, round(monthly[i])])
     for v in table:
