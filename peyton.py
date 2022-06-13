@@ -22,7 +22,7 @@ def good(): #define good function for the good return for the 21 years
     monthly = []
     for i in range(duration):
         if i > 0:
-            monthly(monthly[i - 1]*(1 + float(i_r) /100))
+            monthly.append(monthly[i - 1]*(1 + float(i_r) /100))
         else:
             monthly.append(amount * (1 + i_r /100) ** (i + 1))
         print("The Total Value to Date is:", round(monthly[i], 2))
