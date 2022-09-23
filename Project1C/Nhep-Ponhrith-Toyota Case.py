@@ -4,10 +4,10 @@ def main():
 
     smcf = min_cost_flow.SimpleMinCostFlow()
 
-    start_nodes = np.array ([1,1,2,3,3,4,5,5,6,7,7,7])
-    end_nodes = np.array([2,3,3,4,4,5,5,5,5,6,6])
-    capacities = np.array([100,60,80,170,70])
-    unit_costs = np.array([30,40,50,35,30,40,35,25,50,45,50])
+    start_nodes = np.array ([1,1,2,3,3,4,5,5,6,7,7,7])#12
+    end_nodes = np.array([2,3,3,4,4,5,5,5,5,6,6])#11
+    capacities = np.array([100,60,80,170,70])#5
+    unit_costs = np.array([30,40,50,35,30,40,35,25,50,45,50])#11
 
     supplies =[200,300]
 
@@ -34,7 +34,6 @@ def main():
             (smcf.tail(i), smcf.head(i), smcf.flow(i), smcf.capacity(i), cost))
 
 
-    if __name__ == '__main__':
-        main()
-
+if __name__ == '__main__':
+    main()
 
