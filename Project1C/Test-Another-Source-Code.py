@@ -1,11 +1,11 @@
-
-from ortools.graph.python import pywrapgraph
+import ortools
+import ortools.graph.pywrapgraph
 
 
 def main():
-    start_nodes = ([1,1,2,3,3,4,5,5,6,7,7,7])
-    end_nodes =   ([2,3,3,4,4,5,5,5,5,6,6])
-    capacities =  ([100,60,80,170,70])
+    start_nodes = ([1,   1,   2,  3,   4,   5,  5,  6,   7,  7,   7]) 
+    end_nodes =   ([2,   4,   3,  5,   5,   3,  6,  5,   4,  5,   6]) 
+    capacities =  ([30,  40,  50, 35,  30,  40, 35, 25,  50, 45,  50]) 
 
     max_flow = pywrapgraph.SimpleMaxFlow()
     for i in range(0, len(start_nodes)):
